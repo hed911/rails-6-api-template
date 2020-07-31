@@ -1,0 +1,13 @@
+Created the project with the special tag for only APIS rails new api-template --api
+Added figaro gem to handle the env variables in development(In production the server by itself sets the env variables)
+Added config/application.yml to the .gitignore because if it is pushed to the repository everyone would see the credentials
+Followed this tutorial to set knock https://davidgay.org/programming/jwt-auth-rails-6-knock/
+Example request 
+URL: localhost:3000/auth
+BODY:
+{
+  "auth": {
+    "email": "demouser@example.com",
+    "password": "testingpassword123"
+  }
+}

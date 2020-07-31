@@ -1,0 +1,32 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["database_name"] %>
+  host: <%= ENV["database_host"] %>
+  pool: 5
+  timeout: 5000
+  username: <%= ENV["database_username"] %>
+  password: <%= ENV["database_password"] %>
+  port: <%= ENV["database_port"] %>
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["database_name"] %>
+  host: <%= ENV["database_host"] %>
+  pool: 5
+  timeout: 5000
+  username: <%= ENV["database_username"] %>
+  password: <%= ENV["database_password"] %>
+  port: <%= ENV["database_port"] %>
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["database_name"] %>
+  host: <%= ENV["database_host"] %>
+  pool: 5
+  timeout: 5000
+  username: <%= ENV["database_username"] %>
+  password: <%= ENV["database_password"] %>
+  port: <%= ENV["database_port"] %>
