@@ -1,32 +1,32 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV["database_name"] %>
-  host: <%= ENV["database_host"] %>
+  database: <%= ENV["production_database_name"] %>
+  host: <%= ENV["production_database_host"] %>
   pool: 5
   timeout: 5000
-  username: <%= ENV["database_username"] %>
-  password: <%= ENV["database_password"] %>
-  port: <%= ENV["database_port"] %>
-
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: <%= ENV["database_name"] %>
-  host: <%= ENV["database_host"] %>
-  pool: 5
-  timeout: 5000
-  username: <%= ENV["database_username"] %>
-  password: <%= ENV["database_password"] %>
-  port: <%= ENV["database_port"] %>
+  username: <%= ENV["production_database_username"] %>
+  password: <%= ENV["production_database_password"] %>
+  port: <%= ENV["production_database_port"] %>
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV["database_name"] %>
-  host: <%= ENV["database_host"] %>
+  database: <%= ENV["production_database_name"] %>
+  host: <%= ENV["production_database_host"] %>
   pool: 5
   timeout: 5000
-  username: <%= ENV["database_username"] %>
-  password: <%= ENV["database_password"] %>
-  port: <%= ENV["database_port"] %>
+  username: <%= ENV["production_database_username"] %>
+  password: <%= ENV["production_database_password"] %>
+  port: <%= ENV["production_database_port"] %>
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["test_database_name"] %>
+  host: <%= ENV["test_database_host"] %>
+  pool: 5
+  timeout: 5000
+  username: <%= ENV["test_database_username"] %>
+  password: <%= ENV["test_database_password"] %>
+  port: <%= ENV["test_database_port"] %>

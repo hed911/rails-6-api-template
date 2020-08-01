@@ -28,6 +28,11 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 4.0.1' #ALLOW US TO HANDLE TESTS 
+  gem 'faker' #ALLOW US TO HANDLE TESTS 
+  gem 'factory_bot_rails' #ALLOW US TO HANDLE TESTS 
+  gem 'database_cleaner' #ALLOW US TO HANDLE TESTS 
+  gem 'shoulda-matchers', '~> 4.0' #ALLOW US TO HANDLE TESTS 
 end
 
 group :development do

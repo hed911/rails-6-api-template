@@ -11,3 +11,4 @@ BODY:
     "password": "testingpassword123"
   }
 }
+Followed this tutorial to set Rspecs https://medium.com/@sedwardscode/how-to-properly-test-a-rails-api-with-rspec-f15cbe1dfd11
