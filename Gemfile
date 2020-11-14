@@ -32,7 +32,7 @@ group :development, :test do
   gem 'faker' #ALLOW US TO HANDLE TESTS 
   gem 'factory_bot_rails' #ALLOW US TO HANDLE TESTS 
   gem 'database_cleaner' #ALLOW US TO HANDLE TESTS 
-  gem 'shoulda-matchers', '~> 4.0' #ALLOW US TO HANDLE TESTS 
+  #gem 'shoulda-matchers', '~> 4.0' #ALLOW US TO HANDLE TESTS 
 end
 
 group :development do
@@ -52,4 +52,5 @@ gem "figaro" #TO SET ENV VARIABLES IN DEVELOPMENT
 gem 'pg' #THE DATABASE
 gem "knock", github: "nsarno/knock", branch: "master",
     ref: "9214cd027422df8dc31eb67c60032fbbf8fc100b" #JWT AUTH
-    
+gem "faker"
+gem 'rack-cors'
